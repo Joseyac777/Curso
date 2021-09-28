@@ -36,3 +36,7 @@ console.log(frutas);
 frutas.unshift('Limon'); // Agrega al inicio de la cadena
 
 console.log(frutas);
+
+frutas[0] = 'Prue'
+
+console.log(frutas);
