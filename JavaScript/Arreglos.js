@@ -15,6 +15,24 @@ autos[autos.length] = 'Audi';
 
 console.log(autos);
 
-
-
 console.log(Array.isArray(autos));
+
+let frutas = ['Mango','Banano','Naranja','Manzana']
+
+console.log(frutas.join('-')); // Metodo para separar 
+
+frutas.pop(); // Funcion que borra el ultimo elemento del array 
+
+console.log(frutas);
+
+frutas.push('Kiwi'); // push nos agrega ala cadena en el ultimo de la cadena 
+
+console.log(frutas);
+
+frutas.shift(); // remueve el primero de la cadena 
+
+console.log(frutas);
+
+frutas.unshift('Limon'); // Agrega al inicio de la cadena
+
+console.log(frutas);
