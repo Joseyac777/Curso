@@ -40,3 +40,12 @@ console.log(frutas);
 frutas[0] = 'Prue'
 
 console.log(frutas);
+
+let x = frutas.splice(1,2,'Pera') // Metodo splice remueve mediante indicadores y eliminadores
+
+console.log(x); 
+console.log(frutas);
+
+frutas.splice(1,0,'Banano','Naranja')
+
+console.log(frutas);
