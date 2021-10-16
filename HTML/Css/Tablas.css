@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(233, 228, 211);
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table{
+    width: 30%;
+}
+
+caption{
+    color: brown;
+    padding: 5px;
+    font-family: 'Trocchi', serif;
+    font-size: 25px;
+}
+
+th{
+    background-color: thistle;
+}
+
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+tr:nth-child(odd){
+    background-color: azure;
+}
+
+
+/* even es para reglones pares y odd para impares */

@@ -1,0 +1,26 @@
+
+h1{
+    color: coral;
+    text-align: center;
+}
+
+h2{
+    color: darkblue;
+}
+
+p{
+    color: darkslateblue;
+    text-align: center;
+}
+
+div{
+    border: 10px solid darkcyan;
+    background-color: antiquewhite;
+    text-align: center;
+
+}
+
+div:hover{
+    background-color: blue;
+    
+}

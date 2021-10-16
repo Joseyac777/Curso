@@ -22,3 +22,8 @@ console.log(FuncionFlecha(4,6))
 let resultadoFlecha = FuncionFlecha(4,4)
 
 console.log(resultadoFlecha)
+
+//Funciones Anonimas 
+(function(abs){
+    console.log(`Hola: ${abs}`);
+}('Jose'))
