@@ -1,26 +1,38 @@
 
-h1{
+.titulo{
     color: coral;
     text-align: center;
+    margin: 15px;
 }
 
 h2{
     color: darkblue;
 }
 
-p{
-    color: darkslateblue;
-    text-align: center;
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    content: attr();
 }
 
-div{
+/* Identificador Tipo ID CSS */
+#TituloPrincipal{
+    color: darkcyan;
+    text-align: center;
+    margin: 15px;
+}
+
+
+/* Clases en CSS */
+.tarjeta{
     border: 10px solid darkcyan;
     background-color: antiquewhite;
     text-align: center;
-
+    margin: 15px 140px;
 }
 
-div:hover{
-    background-color: blue;
-    
+.tituloDiv{
+    color: blue;
 }

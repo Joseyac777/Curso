@@ -1,0 +1,19 @@
+.Titulo{
+    color: crimson;
+    text-align: center;
+}
+
+.Marco{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.centrar{
+    text-align: center;   
+}
+
+input:hover{
+    background-color:darkcyan;
+}
+

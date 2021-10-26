@@ -1,0 +1,478 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #fff;
+}
+
+.navigation{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid #4d5bf9;
+    background: #4d5bf9;
+    transition: width 0.5s;
+    overflow-x: hidden;
+}
+
+.navigation.active{
+    width: 300px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li.active{
+    background: #fff;
+}
+
+.navigation ul li.active a{
+    color: #333;
+}
+
+.navigation ul li b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.navigation ul li b:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #4d5bf9;
+}
+
+.navigation ul li b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.navigation ul li b:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #4d5bf9;
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2){
+    display: block;
+}
+
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+
+}
+
+.navigation ul li a .icon ion-icon{
+    font-size: 1.5em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+.toggle{
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #4d5bf9;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle.active{
+    background: #09076e;
+}
+
+.toggle ion-icon{
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+}
+
+.toggle ion-icon.open,
+.toggle.active ion-icon.close{
+    display: block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open{
+    display: none;
+}
+/* asd 
+position: fixed;
+
+*/
+.contend{
+    
+    float: right;
+    margin: auto;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-top: 20px;
+    width: 1035px;
+    height: 585px;
+    background: linear-gradient(to right,rgba(159, 205, 236, 0.7) 0%,rgb(104, 161, 202) 50%,rgba(3, 101, 248, 0.7) 100%);;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.agregar_contenedor {
+    margin: 0 auto;
+    margin-left: 30px;
+}
+
+.agregar_tipoSalud{
+    float: right;
+    margin-top: 10px;
+    margin-right: 400px;
+    width: 200px;
+    border: 1px solid #83a4e0;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    transform: translate(-1%);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.agregar_tipoSalud:hover{
+    transform: translate(-1%, 5%);
+    box-shadow: 0 0 10px #ff416d65;
+}
+
+.agregar_tipo {
+    width: 110px;
+    border: 1px solid #83a4e0;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transform: translate(-1%);
+    transition: all .3s;
+    cursor: pointer;
+}
+.agregar_tipo:hover{
+    transform: translate(-1%, 5%);
+    box-shadow: 0 0 10px #ff416d65;
+}
+
+
+.agregar_descripcion,
+.agregar_valor {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.agregar_descripcion,
+.agregar_temp {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 1px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.agregar_descripcion { 
+    width: 400px;
+    
+}
+
+.agregar_btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #0a07d6;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: -5px;
+}
+
+.agregar_btn:active { transform: translateY(2px); }
+
+.ingreso {
+    float: left;
+    width: 370px;
+    margin-right: 70px;
+}
+
+.limpiarEstilos::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.elemento {
+    padding: 13px;
+    padding-right: 5px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-right: -125px;
+}
+
+
+.elemento:first-child { border-top: 1px solid #e7e7e7; }
+.elemento:nth-child(even) { background-color: #f7f7f7; }
+
+.elemento_descripcion {
+    float: left;
+}
+
+.derecha { 
+    float: right;
+    margin-right: 260px;
+}
+
+.derecha_sala {
+    float: right; 
+    margin-right: -145px;
+}
+
+.derecha_temp{
+    float: right;
+    margin-right: -220px;
+}
+
+.derecha_aciento{
+    float: right;
+    margin-right: -298px;
+}
+
+.derecha_NAsiento{
+    float: right;
+    margin-right: -310px;
+}
+
+.tituloNombre{
+    margin-left: 50px;
+    margin-top: -1px;
+}
+
+.tituloDpi{  
+    margin-left: 190px;
+    margin-top: -20px;
+}
+
+.tituloSala{ 
+    margin-left: 270px;
+    margin-top: -20px;
+}
+
+.tituloTemp{
+    margin-left: 350px;
+    margin-top: -23px;
+}
+
+.tituloAsiento{
+    margin-left: 420px;
+    margin-top: -23px;
+}
+
+.ingreso_titulo{
+    margin-left: 33px;
+}
+
+.personasCine{
+    padding: 25px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    float: right;
+    background: transparent;
+    margin-top: 100px;
+    margin-right: 200px;
+}
+
+.personasCine h1{
+    text-align: center;
+}
+
+.personasCine:hover{
+    text-transform: uppercase;
+    transition: all .3s;
+    cursor: pointer;
+    transform: translate(-1%, 3%);
+    box-shadow: 0 0 10px #ff416d65;
+}
+
+.datosCine{
+    float: right;
+    margin-top: 5px;
+    margin-right: 415px;
+}
+
+.verdatos{
+    float: right;
+    margin-top: -43px;
+    margin-right: 165px;
+    display: none;
+}
+
+.verdatos1{
+    float: right;
+    margin-top: -43px;
+    margin-right: 165px;
+    display: none;
+}
+.verdatos2{
+    float: right;
+    margin-top: -43px;
+    margin-right: 165px;
+    display: none;
+}
+
+
+.stnombre{
+    border: 1px solid black;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 1px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+    
+}
+
+
+.btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #0a07d6;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-top: -50px;
+    margin-left: 225px;
+}
+
+.btn:active { transform: translateY(2px); }
+
+.btn2 {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #0a089c;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-top: -50px;
+    margin-left: 225px;
+}
+
+.btn2:active { transform: translateY(2px); }
+
+.botonS{
+    float: right;
+    margin-top: -20px;
+    margin-right: 130px;
+    display: none;
+}
+.btnS:active { transform: translateY(2px); }
+
+.btnN{
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #0a07d6;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-top: -50px;
+    margin-left: 605px;
+}
+
+.btnN:active { transform: translateY(2px); }
+
+

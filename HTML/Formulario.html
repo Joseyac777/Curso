@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form method="get" action="MiServidor">
+        <!-- Agrega un marcomo como dar a conoser que esta dentro de un formulario  -->
+        <fieldset>
+            <legend>Datos Persona</legend>
+
+            <label for="IdPersona">Persona:</label>
+            <input type="text" id="IdPersona" name="IdPersona"
+                readonly="true" value="100"
+            /><br>
+
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre"
+                placeholder="Nombre" required="true"
+                /><br>
+    
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" name="apellido"
+                placeholder="Apellido" required="true"
+                /><br>
+            
+            <label for="edad">Edad</label><br>
+            <input type="number" name="edad" id="edad"
+                placeholder="Edad" required ="true"
+                /><br>
+    
+            <label>Genero</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Mujer</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Hombre</label><br>
+    
+            <label>Musica Favorita</label><br>
+            <input type="checkbox" name="musica" id="banda" value="banda">
+            <label for="banda">Banda</label><br>
+            <input type="checkbox" name="musica" id="regueton" value="regueton">
+            <label for="regueton">Regueton</label><br>
+    
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"
+                placeholder="Correo&Email" required="true"
+                /><br>
+    
+            <label for="autos">Marca de carros Favoritas</label><br>
+            <select name="autos" id="autos">
+                <option id="volv" value="volvo">Volvo</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW" selected='true'>BMW</option>
+            </select><br>
+            
+            <label for="password">password</label><br>
+            <input type="password" id="password" name="password"
+                placeholder="password" required="true"
+                /><br>
+            
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Comenta"
+            ></textarea><br>
+    
+            <input type="submit" id="enviar" value="Enviar">
+            <input type="submit" formnovalidate="formnovalidate" 
+                value="Enviar sin validar"/>
+        </fieldset>
+    </form>
+</body>
+</html>

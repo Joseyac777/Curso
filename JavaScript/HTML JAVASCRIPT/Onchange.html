@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Onchange</title>
+</head>
+<body>
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">
+        Manejando Dom con JavaScript
+    </h1>
+
+    <h2 id="titulodos" onmousedown="verde(this)" onmouseup="morado(this)">Titulo de colores</h2>
+
+    Nombre: <input type="text" onchange="Mayuscula(this)">
+
+    <script>
+        
+        function Mayuscula(nombre){
+            nombre.value = nombre.value.toUpperCase();
+        }
+
+        function rojo(titulo){
+            titulo.style.color = 'red'
+        }
+
+        function azul(titulo){
+            titulo.style.color = 'blue'
+        }
+
+        function verde(titulo){
+            titulo.style.color = 'green'
+        }
+
+        function morado(titulo){
+           titulo.style.color = 'purple'
+        }
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando OnFocus en HTML</title>
+</head>
+<body>
+    <h1 id="titulo">Manejo de DOM en JavaScript</h1><br>
+    <form id="forma" >
+        Nombre: <input type="text" id="nombre">
+        Apellido <input type="text" id="apellido">
+        
+    </form>
+    <button id="btn">Enviar</button>
+    <p id="name"></p>
+
+    <script>
+        const forma = document.getElementById('forma'); 
+        let nombre = document.getElementById('nombre');
+        let apellido = document.getElementById('apellido');
+        //Agregamos la funcion true para decir a todos los elementos dentro del objeto que se seleccione
+        forma.addEventListener('focus',(evento)=>{
+                evento.target.style.background = 'pink'
+
+        },true)
+
+        forma.addEventListener('blur',(evento)=>{
+            evento.target.style.background = 'white'
+        },true)
+
+        document.getElementById('btn').addEventListener('click', ()=>{
+            document.getElementById('name').innerHTML = nombre.value + ' ' + apellido.value
+        });
+        //Manera individual
+        //Se llama mediante id despues addEventListener y ponesmos el evento sin on y despues la funcion collback
+        //document.getElementById('apellido').addEventListener('focus',(evento)=>{
+        //    evento.target.style.background = 'yellow'
+        //})
+        //document.getElementById('apellido').addEventListener('blur',regresarColor)
+
+        function regresarColor(elemento){
+            elemento.target.style.background = 'white'
+        }
+    </script>
+</body>
+</html>

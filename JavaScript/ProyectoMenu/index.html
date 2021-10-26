@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Proyecto Menu</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="#" onclick="CargarMenu()">
+                    <span class="icon"><ion-icon name="menu"></ion-icon></span>
+                    <span class="title" >MENU</span>
+                </a>
+            </li>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="#" onclick="CargarCine()">
+                    <span class="icon"><ion-icon name="glasses"></ion-icon></span>
+                    <span class="title"  >CINE</span>
+                </a>
+            </li>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icon"><ion-icon name="restaurant"></ion-icon></span>
+                    <span class="title">RESTAURANTE</span>
+                </a>
+            </li>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icon"><ion-icon name="fitness"></ion-icon></span>
+                    <span class="title">GYM</span>
+                </a>
+            </li>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icon" onclick="CargarListado()"><ion-icon name="medkit"></ion-icon></span>
+                    <span class="title">LISTADO SALUD</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="toggle">
+        <ion-icon name="menu" class="open"></ion-icon>
+        <ion-icon name="close" class="close"></ion-icon>
+    </div>
+
+    <div id="menu" class="contend">
+        <form id="forma" onsubmit="return false">
+            
+        </form>
+        
+        <div class="agregar_contenedor">
+            <div class="ingreso">
+                <div id='lista-ingresos'>
+                    
+                </div>
+            </div>
+                     
+        </div>
+        <div id="VerCineinfo" class="Cineinfo">
+            <div id="informacionCineVer" class="datosCine">
+                <!-- <form id="formaCina" onsubmit="return false">
+                    <h1 style="text-align: center;">Datos Cine</h1>
+                    <select id="tipoVerCine" class="agregar_tipoSalud">
+                        <option disabled selected>Ver por</option>
+                        <option value="sala">Sala</option>
+                        <option value="nombre">Nombre</option>
+                        <option value="dpi">Dpi</option>
+                    </select>
+                    <div id="premioNombre" class="verdatos">
+                        <input type="text" class="stnombre" id="verNombre" placeholder="NOMBRE">   
+                    </div>
+                    <div id="premioDpi" class="verdatos1">
+                        <input type="text" class="stnombre" id="verDpi" placeholder="DPI">
+                    </div>
+                    <div id="premioSala" class="verdatos2">
+                        <input type="text" class="stnombre" id="verSala" placeholder="SALA">
+                    </div>
+                    <button class="btn" onclick="seleciono()">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </button>
+                    <div id="botonS" class="botonS">
+                        <button class="btn2" onclick="mostrarDatosCine()">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </button>
+                    </div>
+                    <h2 class='ingreso_titulo'>Datos</h2><br>
+                        <h3 class="tituloNombre">Nombre</h3>
+                        <h3 class="tituloDpi">DPI</h3>
+                        <h3 class="tituloAsiento">#Asiento</h3>
+                    <div class="ingreso">
+                        <div id='mostrarLista'>
+                            <div class="elemento limpiarEstilos">
+                                <div class="elemento_descripcion">JOSE YAC</div>
+                                    <div class="derecha limpiarEstilos">
+                                        <div class="elemento_valor">78963125</div>
+                                    </div>
+                                    <div class="derecha_NAsiento">
+                                        <div class="elemento_descripcion">10</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+        let lista = document.querySelectorAll('.list');
+
+        for(let i=0; i<lista.length; i++){
+            lista[i].onclick = function(){
+                let j=0;
+                while(j < lista.length){
+                    lista[j++].className = 'list';
+                }
+                lista[i].className = 'list active';
+            }
+        }
+
+    </script>
+    
+    <script src="JS/persona.js"></script>
+    <script src="JS/cine.js"></script>
+    <script src="JS/listado.js"></script>
+    <script src="JS/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+<!-- 
+    
+<div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">JOSE YAC</div>
+                            <div class="derecha limpiarEstilos">
+                                <div class="elemento_valor">78963125</div>
+                            </div>
+                            <div class="derecha_sala">
+                                <div class="elemento_descripcion">Sala A</div>
+                            </div>
+                            <div class="derecha_temp">
+                                <div class="elemento_descripcion">98°</div>
+                            </div>
+                            <div class="derecha_aciento">
+                                <div class="elemento_descripcion">5°</div>
+                            </div>
+                    </div>
+
+
+<div class="titulo">
+                <h1 class="titulo">Cine</h1>
+            </div>
+            <div class="agregar">
+                <div class="agregar_contenedor">
+                    <h2 class="titulo">El cine por momentos de pandemia solo cuenta con 20 asientos por sala</h2>
+                    <select class="agregar_tipo" id="tipo">
+                        <option value="SalaA">SALA A</option>
+                        <option value="SalaB">SALA B</option>
+                        <OPtion value="SalaC">SALA C</OPtion>
+                    </select>
+                    <input type="text" class="agregar_descripcion" placeholder="NOMBRE & APELLIDO" id="nombre">
+                    <input type="number" class="agregar_valor" placeholder="DPI" id="dpi" step="any">
+                    <input type="number" class="agregar_temp" placeholder="TEMP" id="valor" step="any">
+                    <button class="agregar_btn" onclick="agregarDato()">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </button>
+                </div>
+                <h2 class='ingreso_titulo'>Ingresos</h2><br>
+                    <h3 class="tituloNombre">Nombre</h3>
+                    <h3 class="tituloDpi">DPI</h3>
+                    <h3 class="tituloSala">Sala</h3>
+                    <h3 class="tituloTemp">Temp</h3>
+                    <h3 class="tituloAsiento">#Asiento</h3>
+            </div>
+
+
+ -->

@@ -1,0 +1,70 @@
+<!-- Veremos como manejar las formas de editar o modificar los valores de nuestros elementos de html -->
+<!-- document.write podemos usar para mandar informacion ya que deja vacio todo el html como crear otro nuevo  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+
+    <h1 id="titulo">JavaScript</h1>
+    <img id="img" src="../../HTML/Imagenes/javascript.png" alt="JavaScript" title="JavaScript"><br>
+
+    <button id="bot" onclick="Mostrar()">JavaScript</button><br>
+
+    <h2 onclick="Cambiar(this)">Titulo con this</h2>
+
+    <h3>Calculadora Suma</h3>
+
+    <input type="number" id="dato1"> + <input type="number" name="" id="dato2">
+    <button onclick="Sumar()">Sumar</button>
+
+    <input type="number" id="resultado">
+
+    <div id="mostrar"></div>
+
+    <script>
+
+        function Mostrar(){
+            document.getElementById('titulo').innerHTML = 'HTML';
+            document.getElementById('img').title = 'HTML';
+            document.getElementById('img').src = '../../HTML/Imagenes/html5.png'
+            document.getElementById('bot').innerHTML = 'HTML'
+
+            Regresar()
+        }
+
+        function Cambiar(titulo){
+            titulo.innerHTML = 'Calculadora'
+        }
+
+        function Sumar(){
+            dato1 = document.getElementById('dato1').value;
+            dato2 = document.getElementById('dato2').value;
+            suma = (parseInt(dato1)+ parseInt(dato2));
+            console.log(suma);
+            document.getElementById('resultado').value = suma;
+        }
+
+    
+    </script>
+</body>
+</html>
+
+<!-- el metodo onload nos muestra al inicio de la pagina web cuando se carga 
+onload="entrando()"
+function entrando(){
+    alert('Estas por entrar prro')
+
+    let texto = '';
+
+    if(navigator.cookieEnabled){
+        texto = 'Las cookis estan habilitas'
+    }else{
+        texto = 'Las cookis estan desactivadas'
+    }
+    document.getElementById('mostrar').innerHTML = texto
+} -->
