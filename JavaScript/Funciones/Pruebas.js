@@ -29,9 +29,9 @@ myPromise.then(
 
 class persona{
     static contador = 0;
-    constructor(nombre){
+    constructor(nombre,edad){
         this._nombre = nombre;
-        this._id = persona.contador +=5;
+        this._edad = edad;
     }
     get nombre() {
         return this._nombre;
@@ -39,15 +39,26 @@ class persona{
     set nombre(value) {
         this._nombre = value;
     }
-    get id() {
-        return this._id;
+    get edad() {
+        return this._edad;
+    }
+    set edad(value) {
+        this._edad = value;
     }
 }
 
-let dato = new persona('jose')
 
-console.log(dato);
+let dato = [
+    new persona('adolfo',21),
+    new persona('jose',18),
+    new persona('alex',18)
+]
 
-let dato2 = new persona('adolfo')
+dato.map(value => Saludar(value))
 
-console.log(dato2);
+function Saludar(dato){
+    console.log(dato.edad == 18);
+    if(dato.edad == 18){
+        console.log(`${dato.nombre}`);
+    }
+}

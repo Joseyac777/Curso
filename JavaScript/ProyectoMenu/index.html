@@ -30,7 +30,7 @@
                 <b></b>
                 <b></b>
                 <a href="#">
-                    <span class="icon"><ion-icon name="restaurant"></ion-icon></span>
+                    <span class="icon" onclick="CargarRestaurante()"><ion-icon name="restaurant"></ion-icon></span>
                     <span class="title">RESTAURANTE</span>
                 </a>
             </li>
@@ -62,7 +62,8 @@
         <form id="forma" onsubmit="return false">
             
         </form>
-        
+
+
         <div class="agregar_contenedor">
             <div class="ingreso">
                 <div id='lista-ingresos'>
@@ -71,53 +72,13 @@
             </div>
                      
         </div>
+        
         <div id="VerCineinfo" class="Cineinfo">
             <div id="informacionCineVer" class="datosCine">
-                <!-- <form id="formaCina" onsubmit="return false">
-                    <h1 style="text-align: center;">Datos Cine</h1>
-                    <select id="tipoVerCine" class="agregar_tipoSalud">
-                        <option disabled selected>Ver por</option>
-                        <option value="sala">Sala</option>
-                        <option value="nombre">Nombre</option>
-                        <option value="dpi">Dpi</option>
-                    </select>
-                    <div id="premioNombre" class="verdatos">
-                        <input type="text" class="stnombre" id="verNombre" placeholder="NOMBRE">   
-                    </div>
-                    <div id="premioDpi" class="verdatos1">
-                        <input type="text" class="stnombre" id="verDpi" placeholder="DPI">
-                    </div>
-                    <div id="premioSala" class="verdatos2">
-                        <input type="text" class="stnombre" id="verSala" placeholder="SALA">
-                    </div>
-                    <button class="btn" onclick="seleciono()">
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </button>
-                    <div id="botonS" class="botonS">
-                        <button class="btn2" onclick="mostrarDatosCine()">
-                            <ion-icon name="checkmark-circle"></ion-icon>
-                        </button>
-                    </div>
-                    <h2 class='ingreso_titulo'>Datos</h2><br>
-                        <h3 class="tituloNombre">Nombre</h3>
-                        <h3 class="tituloDpi">DPI</h3>
-                        <h3 class="tituloAsiento">#Asiento</h3>
-                    <div class="ingreso">
-                        <div id='mostrarLista'>
-                            <div class="elemento limpiarEstilos">
-                                <div class="elemento_descripcion">JOSE YAC</div>
-                                    <div class="derecha limpiarEstilos">
-                                        <div class="elemento_valor">78963125</div>
-                                    </div>
-                                    <div class="derecha_NAsiento">
-                                        <div class="elemento_descripcion">10</div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </form> -->
+        
             </div>
         </div>
+    
     </div>
 
     <script>
@@ -146,6 +107,7 @@
     
     <script src="JS/persona.js"></script>
     <script src="JS/cine.js"></script>
+    <script src="JS/restaurante.js"></script>
     <script src="JS/listado.js"></script>
     <script src="JS/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>

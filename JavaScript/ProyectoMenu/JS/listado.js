@@ -109,6 +109,7 @@ let crearDatosHtml = (ingreso)=>{
     let sala = formaCine['verSala'];
 
     if(sala.value == ingreso.sala ){
+        console.log(ingreso.nombre);
         let ingresoHTML = `
         <div class="elemento limpiarEstilos">
             <div class="elemento_descripcion">${ingreso.nombre}</div>
@@ -119,7 +120,7 @@ let crearDatosHtml = (ingreso)=>{
                 <div class="elemento_descripcion">${ingreso.idAsiento}</div>
             </div>
         </div>
-    `;
+        `;
         return ingresoHTML
     }
 }
