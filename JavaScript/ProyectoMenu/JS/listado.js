@@ -129,12 +129,3 @@ let mostrarDatosCine = ()=>{
     cargarDatos();
 }
 
-
-
-
-// const PersonasCine = [
-//     new Cine('Adolfo Yac',45612378,25,'SalaA'),
-//     new Cine('Alex Yac',45612378,25,'SalaA'),
-//     new Cine('Jose Yac',45612378,21,'SalaC')
-// ]
-
