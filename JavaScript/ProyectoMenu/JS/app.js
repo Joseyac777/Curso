@@ -4,11 +4,11 @@ const PersonasCine = [
 ]
 
 const PersonasRestaurante = [
-    
+    new restaurante('Alfonso hernandez',321456987,30,'Mesa3')
 ]
 
 const PersonasGym = [
-    
+    new Gym('Brian lopez',654789321,30,'Pierna')
 ]
 
 let vaciar = ()=>{
