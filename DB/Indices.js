@@ -1,0 +1,616 @@
+use indices
+
+db.empresas.insertMany([{
+  "id": 1,
+  "Sitio": "Thoughtworks",
+  "Visitas": 7074,
+  "email": "dmcconnal0@cdc.gov",
+  "ip_address": "246.33.94.237"
+}, {
+  "id": 2,
+  "Sitio": "Roombo",
+  "Visitas": 9002,
+  "email": "lroseaman1@omniture.com",
+  "ip_address": "76.171.135.19"
+}, {
+  "id": 3,
+  "Sitio": "Gigazoom",
+  "Visitas": 9716,
+  "email": "calday2@liveinternet.ru",
+  "ip_address": "139.183.75.155"
+}, {
+  "id": 4,
+  "Sitio": "Chatterbridge",
+  "Visitas": 4143,
+  "email": "spadell3@nasa.gov",
+  "ip_address": "6.177.51.238"
+}, {
+  "id": 5,
+  "Sitio": "Shufflebeat",
+  "Visitas": 4698,
+  "email": "gbenzies4@salon.com",
+  "ip_address": "61.182.172.35"
+}, {
+  "id": 6,
+  "Sitio": "Katz",
+  "Visitas": 9131,
+  "email": "dberi5@4shared.com",
+  "ip_address": "126.210.130.154"
+}, {
+  "id": 7,
+  "Sitio": "Mymm",
+  "Visitas": 9574,
+  "email": "lforte6@economist.com",
+  "ip_address": "231.176.134.248"
+}, {
+  "id": 8,
+  "Sitio": "Yodel",
+  "Visitas": 3729,
+  "email": "gcridlon7@gravatar.com",
+  "ip_address": "89.186.144.204"
+}, {
+  "id": 9,
+  "Sitio": "Jabberstorm",
+  "Visitas": 5955,
+  "email": "vgurner8@vkontakte.ru",
+  "ip_address": "25.100.25.223"
+}, {
+  "id": 10,
+  "Sitio": "Fivebridge",
+  "Visitas": 1578,
+  "email": "mgoley9@washingtonpost.com",
+  "ip_address": "126.57.249.231"
+}, {
+  "id": 11,
+  "Sitio": "Einti",
+  "Visitas": 5984,
+  "email": "fbartha@netvibes.com",
+  "ip_address": "187.8.222.51"
+}, {
+  "id": 12,
+  "Sitio": "Devify",
+  "Visitas": 6482,
+  "email": "cmilesb@reference.com",
+  "ip_address": "73.32.248.212"
+}, {
+  "id": 13,
+  "Sitio": "Voolith",
+  "Visitas": 3049,
+  "email": "kgoldsc@squidoo.com",
+  "ip_address": "184.195.133.99"
+}, {
+  "id": 14,
+  "Sitio": "Centimia",
+  "Visitas": 5784,
+  "email": "tablittd@vistaprint.com",
+  "ip_address": "117.107.206.47"
+}, {
+  "id": 15,
+  "Sitio": "Kaymbo",
+  "Visitas": 9052,
+  "email": "bbutlere@drupal.org",
+  "ip_address": "196.100.217.175"
+}, {
+  "id": 16,
+  "Sitio": "Jabberstorm",
+  "Visitas": 1181,
+  "email": "tdavidescof@gmpg.org",
+  "ip_address": "205.203.179.142"
+}, {
+  "id": 17,
+  "Sitio": "Realcube",
+  "Visitas": 6072,
+  "email": "rcasalig@mapy.cz",
+  "ip_address": "198.36.15.192"
+}, {
+  "id": 18,
+  "Sitio": "Vidoo",
+  "Visitas": 917,
+  "email": "ldickingsh@t.co",
+  "ip_address": "113.110.144.250"
+}, {
+  "id": 19,
+  "Sitio": "Zava",
+  "Visitas": 8858,
+  "email": "lmatheyi@timesonline.co.uk",
+  "ip_address": "210.220.199.247"
+}, {
+  "id": 20,
+  "Sitio": "Riffwire",
+  "Visitas": 6811,
+  "email": "smucklestonej@google.it",
+  "ip_address": "119.63.196.10"
+}, {
+  "id": 21,
+  "Sitio": "Roodel",
+  "Visitas": 4366,
+  "email": "fconnockk@shinystat.com",
+  "ip_address": "139.224.164.227"
+}, {
+  "id": 22,
+  "Sitio": "Flashpoint",
+  "Visitas": 5849,
+  "email": "mmaciaszekl@usa.gov",
+  "ip_address": "29.33.58.206"
+}, {
+  "id": 23,
+  "Sitio": "Oyondu",
+  "Visitas": 1375,
+  "email": "mhullem@technorati.com",
+  "ip_address": "109.17.254.138"
+}, {
+  "id": 24,
+  "Sitio": "Buzzster",
+  "Visitas": 3730,
+  "email": "cspringtorpen@surveymonkey.com",
+  "ip_address": "122.170.6.238"
+}, {
+  "id": 25,
+  "Sitio": "Jazzy",
+  "Visitas": 2487,
+  "email": "garnoudo@google.com.br",
+  "ip_address": "43.90.92.126"
+}, {
+  "id": 26,
+  "Sitio": "Abatz",
+  "Visitas": 8857,
+  "email": "hdemichelep@constantcontact.com",
+  "ip_address": "250.58.237.167"
+}, {
+  "id": 27,
+  "Sitio": "Rooxo",
+  "Visitas": 1526,
+  "email": "coboyleq@state.tx.us",
+  "ip_address": "231.164.111.7"
+}, {
+  "id": 28,
+  "Sitio": "Jayo",
+  "Visitas": 9020,
+  "email": "ttribellr@google.it",
+  "ip_address": "28.74.32.184"
+}, {
+  "id": 29,
+  "Sitio": "Flashset",
+  "Visitas": 1951,
+  "email": "vroydens@pbs.org",
+  "ip_address": "228.40.14.50"
+}, {
+  "id": 30,
+  "Sitio": "Kazio",
+  "Visitas": 2231,
+  "email": "zsantit@flickr.com",
+  "ip_address": "4.220.252.95"
+}, {
+  "id": 31,
+  "Sitio": "Shuffledrive",
+  "Visitas": 9176,
+  "email": "wvaggersu@house.gov",
+  "ip_address": "96.58.127.136"
+}, {
+  "id": 32,
+  "Sitio": "Skipstorm",
+  "Visitas": 1609,
+  "email": "pbartozziv@tmall.com",
+  "ip_address": "158.47.54.152"
+}, {
+  "id": 33,
+  "Sitio": "Demimbu",
+  "Visitas": 6353,
+  "email": "cmatskivw@linkedin.com",
+  "ip_address": "234.8.26.250"
+}, {
+  "id": 34,
+  "Sitio": "Zoomzone",
+  "Visitas": 867,
+  "email": "fsturgessx@netvibes.com",
+  "ip_address": "98.139.248.254"
+}, {
+  "id": 35,
+  "Sitio": "Thoughtstorm",
+  "Visitas": 2569,
+  "email": "lchallenory@wired.com",
+  "ip_address": "204.183.134.9"
+}, {
+  "id": 36,
+  "Sitio": "Skimia",
+  "Visitas": 7145,
+  "email": "saartsenz@thetimes.co.uk",
+  "ip_address": "98.169.151.223"
+}, {
+  "id": 37,
+  "Sitio": "Thoughtbeat",
+  "Visitas": 915,
+  "email": "ckamena10@columbia.edu",
+  "ip_address": "21.231.46.31"
+}, {
+  "id": 38,
+  "Sitio": "Leexo",
+  "Visitas": 7668,
+  "email": "mmackessock11@github.io",
+  "ip_address": "117.237.205.179"
+}, {
+  "id": 39,
+  "Sitio": "Babbleopia",
+  "Visitas": 1241,
+  "email": "leyden12@hud.gov",
+  "ip_address": "141.132.4.221"
+}, {
+  "id": 40,
+  "Sitio": "Devbug",
+  "Visitas": 5255,
+  "email": "kpinks13@com.com",
+  "ip_address": "17.145.209.189"
+}, {
+  "id": 41,
+  "Sitio": "Quatz",
+  "Visitas": 5207,
+  "email": "ecaldes14@twitter.com",
+  "ip_address": "213.210.142.176"
+}, {
+  "id": 42,
+  "Sitio": "Npath",
+  "Visitas": 4505,
+  "email": "lfeckey15@reference.com",
+  "ip_address": "168.11.172.43"
+}, {
+  "id": 43,
+  "Sitio": "Trudeo",
+  "Visitas": 6161,
+  "email": "sduval16@unicef.org",
+  "ip_address": "52.157.196.90"
+}, {
+  "id": 44,
+  "Sitio": "DabZ",
+  "Visitas": 5063,
+  "email": "tbullene17@paypal.com",
+  "ip_address": "201.39.79.55"
+}, {
+  "id": 45,
+  "Sitio": "Camido",
+  "Visitas": 7288,
+  "email": "itucknutt18@irs.gov",
+  "ip_address": "217.38.143.36"
+}, {
+  "id": 46,
+  "Sitio": "Yodoo",
+  "Visitas": 9761,
+  "email": "vgrubbe19@census.gov",
+  "ip_address": "3.113.233.150"
+}, {
+  "id": 47,
+  "Sitio": "Buzzdog",
+  "Visitas": 7914,
+  "email": "dmuddiman1a@ibm.com",
+  "ip_address": "6.249.42.179"
+}, {
+  "id": 48,
+  "Sitio": "Topicshots",
+  "Visitas": 4034,
+  "email": "tlaskey1b@dyndns.org",
+  "ip_address": "181.162.244.172"
+}, {
+  "id": 49,
+  "Sitio": "Photolist",
+  "Visitas": 1364,
+  "email": "msaker1c@latimes.com",
+  "ip_address": "240.199.225.34"
+}, {
+  "id": 50,
+  "Sitio": "Skimia",
+  "Visitas": 6345,
+  "email": "mfahy1d@miitbeian.gov.cn",
+  "ip_address": "149.132.226.106"
+}, {
+  "id": 51,
+  "Sitio": "Zoonoodle",
+  "Visitas": 6793,
+  "email": "paingell1e@irs.gov",
+  "ip_address": "50.14.16.181"
+}, {
+  "id": 52,
+  "Sitio": "Trudoo",
+  "Visitas": 3203,
+  "email": "dnanninini1f@ow.ly",
+  "ip_address": "97.142.143.228"
+}, {
+  "id": 53,
+  "Sitio": "Twimbo",
+  "Visitas": 2364,
+  "email": "rpaolicchi1g@g.co",
+  "ip_address": "12.36.186.181"
+}, {
+  "id": 54,
+  "Sitio": "Realcube",
+  "Visitas": 6581,
+  "email": "eventuroli1h@youtu.be",
+  "ip_address": "80.156.237.92"
+}, {
+  "id": 55,
+  "Sitio": "Dynazzy",
+  "Visitas": 5273,
+  "email": "rlittrik1i@foxnews.com",
+  "ip_address": "39.230.242.185"
+}, {
+  "id": 56,
+  "Sitio": "Innotype",
+  "Visitas": 4373,
+  "email": "mgoney1j@mysql.com",
+  "ip_address": "148.59.68.255"
+}, {
+  "id": 57,
+  "Sitio": "Bubbletube",
+  "Visitas": 6430,
+  "email": "gwanek1k@weather.com",
+  "ip_address": "58.35.1.213"
+}, {
+  "id": 58,
+  "Sitio": "Jetwire",
+  "Visitas": 2382,
+  "email": "zheeran1l@alexa.com",
+  "ip_address": "158.117.3.5"
+}, {
+  "id": 59,
+  "Sitio": "Divavu",
+  "Visitas": 3310,
+  "email": "dcushion1m@de.vu",
+  "ip_address": "132.104.119.92"
+}, {
+  "id": 60,
+  "Sitio": "Tanoodle",
+  "Visitas": 3682,
+  "email": "jpigrome1n@amazon.de",
+  "ip_address": "203.190.89.135"
+}, {
+  "id": 61,
+  "Sitio": "Browsetype",
+  "Visitas": 942,
+  "email": "csuero1o@omniture.com",
+  "ip_address": "226.5.190.92"
+}, {
+  "id": 62,
+  "Sitio": "Jabberstorm",
+  "Visitas": 3147,
+  "email": "schafney1p@fastcompany.com",
+  "ip_address": "108.251.34.39"
+}, {
+  "id": 63,
+  "Sitio": "Skinder",
+  "Visitas": 7512,
+  "email": "ffoystone1q@squarespace.com",
+  "ip_address": "8.52.158.104"
+}, {
+  "id": 64,
+  "Sitio": "Skivee",
+  "Visitas": 7540,
+  "email": "aoxer1r@google.ru",
+  "ip_address": "242.175.32.203"
+}, {
+  "id": 65,
+  "Sitio": "Quimba",
+  "Visitas": 2130,
+  "email": "wgillingham1s@ed.gov",
+  "ip_address": "71.77.84.83"
+}, {
+  "id": 66,
+  "Sitio": "Twiyo",
+  "Visitas": 5811,
+  "email": "bgiorgielli1t@disqus.com",
+  "ip_address": "139.142.246.110"
+}, {
+  "id": 67,
+  "Sitio": "Omba",
+  "Visitas": 5876,
+  "email": "cstation1u@reference.com",
+  "ip_address": "9.35.191.155"
+}, {
+  "id": 68,
+  "Sitio": "Ainyx",
+  "Visitas": 6813,
+  "email": "anutton1v@ox.ac.uk",
+  "ip_address": "13.213.238.29"
+}, {
+  "id": 69,
+  "Sitio": "Ainyx",
+  "Visitas": 3595,
+  "email": "cjowitt1w@cornell.edu",
+  "ip_address": "160.102.63.33"
+}, {
+  "id": 70,
+  "Sitio": "Brightdog",
+  "Visitas": 5501,
+  "email": "adanit1x@google.com.br",
+  "ip_address": "126.93.57.37"
+}, {
+  "id": 71,
+  "Sitio": "Lazzy",
+  "Visitas": 3251,
+  "email": "dleicester1y@geocities.com",
+  "ip_address": "206.247.117.125"
+}, {
+  "id": 72,
+  "Sitio": "Yozio",
+  "Visitas": 1937,
+  "email": "rchurchley1z@scientificamerican.com",
+  "ip_address": "122.196.186.255"
+}, {
+  "id": 73,
+  "Sitio": "Abata",
+  "Visitas": 6436,
+  "email": "gburgen20@upenn.edu",
+  "ip_address": "210.225.223.225"
+}, {
+  "id": 74,
+  "Sitio": "Bluezoom",
+  "Visitas": 1033,
+  "email": "mtidbold21@multiply.com",
+  "ip_address": "190.104.168.182"
+}, {
+  "id": 75,
+  "Sitio": "Zooveo",
+  "Visitas": 808,
+  "email": "lramelet22@twitter.com",
+  "ip_address": "47.2.150.248"
+}, {
+  "id": 76,
+  "Sitio": "Gigaclub",
+  "Visitas": 1302,
+  "email": "sburleigh23@twitpic.com",
+  "ip_address": "193.145.168.197"
+}, {
+  "id": 77,
+  "Sitio": "Gabvine",
+  "Visitas": 6913,
+  "email": "orosendorf24@tinyurl.com",
+  "ip_address": "29.60.215.210"
+}, {
+  "id": 78,
+  "Sitio": "Edgeclub",
+  "Visitas": 1477,
+  "email": "swooding25@about.com",
+  "ip_address": "167.230.176.43"
+}, {
+  "id": 79,
+  "Sitio": "Skipfire",
+  "Visitas": 872,
+  "email": "dcoots26@washington.edu",
+  "ip_address": "201.10.230.202"
+}, {
+  "id": 80,
+  "Sitio": "Vidoo",
+  "Visitas": 8273,
+  "email": "jleaver27@upenn.edu",
+  "ip_address": "160.27.230.12"
+}, {
+  "id": 81,
+  "Sitio": "Flipbug",
+  "Visitas": 1690,
+  "email": "qtregonna28@google.co.jp",
+  "ip_address": "21.229.190.107"
+}, {
+  "id": 82,
+  "Sitio": "Divavu",
+  "Visitas": 8973,
+  "email": "arean29@seesaa.net",
+  "ip_address": "218.168.214.26"
+}, {
+  "id": 83,
+  "Sitio": "Buzzshare",
+  "Visitas": 2775,
+  "email": "lroebuck2a@reddit.com",
+  "ip_address": "141.210.12.94"
+}, {
+  "id": 84,
+  "Sitio": "Kazio",
+  "Visitas": 2826,
+  "email": "estrowan2b@tiny.cc",
+  "ip_address": "136.123.32.130"
+}, {
+  "id": 85,
+  "Sitio": "Midel",
+  "Visitas": 5609,
+  "email": "pburgin2c@networkadvertising.org",
+  "ip_address": "148.54.165.147"
+}, {
+  "id": 86,
+  "Sitio": "Dynava",
+  "Visitas": 7317,
+  "email": "abowering2d@psu.edu",
+  "ip_address": "153.166.217.251"
+}, {
+  "id": 87,
+  "Sitio": "Oyonder",
+  "Visitas": 3303,
+  "email": "ewulfinger2e@baidu.com",
+  "ip_address": "107.161.129.6"
+}, {
+  "id": 88,
+  "Sitio": "Realbuzz",
+  "Visitas": 6127,
+  "email": "olockery2f@goo.gl",
+  "ip_address": "171.50.240.144"
+}, {
+  "id": 89,
+  "Sitio": "Eire",
+  "Visitas": 9193,
+  "email": "mmoncreiff2g@icq.com",
+  "ip_address": "213.208.210.76"
+}, {
+  "id": 90,
+  "Sitio": "Trudoo",
+  "Visitas": 4529,
+  "email": "fgallimore2h@ifeng.com",
+  "ip_address": "59.212.135.251"
+}, {
+  "id": 91,
+  "Sitio": "Plajo",
+  "Visitas": 3576,
+  "email": "ppodd2i@theguardian.com",
+  "ip_address": "185.18.52.80"
+}, {
+  "id": 92,
+  "Sitio": "Tagtune",
+  "Visitas": 9487,
+  "email": "cupcott2j@blogtalkradio.com",
+  "ip_address": "71.166.113.210"
+}, {
+  "id": 93,
+  "Sitio": "Blogpad",
+  "Visitas": 9492,
+  "email": "mcroney2k@dropbox.com",
+  "ip_address": "175.127.45.49"
+}, {
+  "id": 94,
+  "Sitio": "Midel",
+  "Visitas": 3062,
+  "email": "ditshak2l@intel.com",
+  "ip_address": "102.68.28.49"
+}, {
+  "id": 95,
+  "Sitio": "LiveZ",
+  "Visitas": 1092,
+  "email": "kschwier2m@sakura.ne.jp",
+  "ip_address": "82.136.167.186"
+}, {
+  "id": 96,
+  "Sitio": "Zoonder",
+  "Visitas": 2961,
+  "email": "wolahy2n@miitbeian.gov.cn",
+  "ip_address": "135.245.211.252"
+}, {
+  "id": 97,
+  "Sitio": "Divape",
+  "Visitas": 8769,
+  "email": "abavidge2o@com.com",
+  "ip_address": "189.151.210.110"
+}, {
+  "id": 98,
+  "Sitio": "Fadeo",
+  "Visitas": 2585,
+  "email": "uduffet2p@1und1.de",
+  "ip_address": "65.73.127.205"
+}, {
+  "id": 99,
+  "Sitio": "Oyondu",
+  "Visitas": 8340,
+  "email": "dpresshaugh2q@histats.com",
+  "ip_address": "217.124.33.131"
+}, {
+  "id": 100,
+  "Sitio": "Livefish",
+  "Visitas": 6502,
+  "email": "tspelsbury2r@homestead.com",
+  "ip_address": "135.168.206.35"
+}])
+
+//Muestra las visitas de menor de 3000 ordenandolas de desendentemente
+db.empresas.find({Visitas:{$lte:3000}}).sort({Visitas:-1})
+
+//Mostrar indices
+db.empresas.getIndexes()
+
+//Crear un indice
+db.empresas.createIndex({Visitas:1})
+
+//Buscar por el indice y ordenando
+db.empresas.find({},{Visitas:1, email:1}).sort({Visitas:-1})
+

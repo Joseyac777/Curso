@@ -1,0 +1,37 @@
+use('Prueba')
+
+db.Estudiante.find()
+
+//Remueve mediante Nombre asi mismo se puede borrar 
+//por otras propiedades del documento
+db.Estudiante.remove({Nombre:"Gualter"})
+
+db.Estudiante.remove({Estado:"Soltera"})
+
+
+//Drop para borrar colecciones completas
+db.Maestros.drop({})
+
+//Funciona nomas en consola 
+var estudios = db.Estudiante.findOne({"Nombre": "Fito"})
+estudios.Nombre = "Jose"
+db.Estudiante.save(estudios)
+
+db.Segundo.insertOne({
+    "Nombre":"Juan",
+    "Apellido":"Gonzales",
+    "Edad":20
+})
+
+db.Segundo.find()
+
+//En la consola agrega un objeto al documento 
+var nuevo = db.Segundo.findOne({"Nombre":"Juan"})
+nuevo.Estudio = {"Noveno Grado": true, "Bach":true}
+db.Segundo.update({Nombre:"Juan"},nuevo)
+
+//Cargamos datos ala propiedad que se asigne
+db.Segundo.update({"Nombre":"Juan"}, {$inc:{"Edad":21}})
+
+//Agrega a todos los datos con el tipo juan cantidad
+db.Segundo.update({Nombre:"Juan"},{$set:{cantidad:10}},{multi:true})

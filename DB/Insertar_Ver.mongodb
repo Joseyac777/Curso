@@ -1,0 +1,37 @@
+//How to create database
+use('Prueba')
+db.Estudiante.insert({
+    Nombre: 'Jose',
+    Edad: 21,
+    Estado: 'Soltero',
+    Fecha_Registro: new Date()
+})
+//Comando para mostrar los registros
+db.Estudiante.find()
+
+//Manera de insertar dato
+db.Estudiante.insert(
+    {
+        Nombre:'Adolfo',
+        Edad: 20,
+        Estado:'Casado',
+        Cargo: 'Empleado',
+        Fecha_Registro: new Date()
+    }
+)
+
+//Manera de insertar dato
+db.Estudiante.insertOne({
+    Ingreso:'Insert one',
+    Visitas: 35,
+    Fecha: new Date()
+})
+//Insertar de manera multiple
+db.Estudiante.insertMany([
+    {Nombre:'Alex', Edad:19, Estado:'Soltera', Fecha_Registro:new Date()},
+    {Nombre:'Ximena', Edad:20, Estado:'Soltera', Fecha_Registro:new Date()},
+    {Nombre:'Gualter', Edad:19, Estado:'Soltero', Fecha_Registro:new Date()}
+])
+
+
+

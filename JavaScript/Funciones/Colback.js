@@ -18,3 +18,21 @@ function FuncionCallback(){
 
 //setTimeout sirve para lanzar una funcion despues de un sierto tiempo 
 setTimeout(FuncionCallback,3000);
+
+function cuadradoCollback(value,callback){
+    setTimeout(
+        ()=>{
+            callback(value,value*value);
+        },0 | Math.random()*100);
+}
+
+cuadradoCollback(2,(value,result)=>{
+    console.log(`Inicia ${value}, ${result}`);
+    cuadradoCollback(3,(value,result)=>{
+        console.log(`Inicia ${value}, ${result}`);
+        cuadradoCollback(4,(value,result)=>{
+            console.log(`Inicia ${value}, ${result}`);
+        })
+    })
+})
+

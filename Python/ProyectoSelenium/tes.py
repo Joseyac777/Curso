@@ -47,4 +47,4 @@ def tearDown(self):
     self.driver.close()
         
 if __name__ == '__main__':
-   unittest.main()
+   unittest.main(verbosity= 2, testRunner= HTMLTestRunner(output= "reportes", report_name= "Tes Cine"))

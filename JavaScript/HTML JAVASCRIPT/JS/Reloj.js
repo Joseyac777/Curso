@@ -11,7 +11,7 @@ const mostrarReloj = ()=>{
 
     let diaSeman = dias[fecha.getDay()]
     let dia = fecha.getDate();
-    let mes = fecha.getMonth();
+    let mes = meses[fecha.getMonth()] ;
     
     let FechaTexto = `${diaSeman},${dia} ${mes}`
 

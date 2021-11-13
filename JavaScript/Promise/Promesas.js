@@ -73,3 +73,16 @@ async function UsandoTodo(){
 }
 
 UsandoTodo()
+
+let dato = (x)=>{
+    return new Promise((resolver,reject)=>{
+        resolver(x)
+    })
+}
+
+dato(2)
+    .then(x => {
+        console.log(x)
+        return dato(x + 5)
+    })
+    .then(x => console.log(x))

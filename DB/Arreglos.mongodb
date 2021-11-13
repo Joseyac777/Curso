@@ -1,0 +1,12 @@
+use('Arreglos')
+
+var arreglo = [
+    {Nombre:'Jose',Edad:21,},
+    {Nombre:'Alex',Edad:19}
+]
+
+db.primero.insertOne(arreglo)
+
+use('Arreglos')
+db.primero.find()
+
